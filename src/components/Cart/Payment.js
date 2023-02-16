@@ -37,7 +37,7 @@ function Payment(props) {
     }
 
     const savedOrder = () => {
-        fetch('http://localhost:9000/orders/neworder', {
+        fetch('https://backdoor.cyclic.app/orders/neworder', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -76,7 +76,7 @@ function Payment(props) {
 
         try {
             const paymentIntent = await axios.post(
-                'http://localhost:9000/orders/payment',
+                'https://backdoor.cyclic.app/orders/payment',
                 {
                     amount: total,
                     email: email,
