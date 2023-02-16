@@ -15,7 +15,7 @@ class Orders extends React.Component {
     componentDidMount() {
 
         if (this.props.user.email) {
-            fetch('http://localhost:9000/orders/allorders', {
+            fetch('https://backdoor.cyclic.app/orders/allorders', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -32,7 +32,7 @@ class Orders extends React.Component {
 
     refreshOrders = () => {
 
-        fetch('http://localhost:9000/orders/allorders', {
+        fetch('https://backdoor.cyclic.app/orders/allorders', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
