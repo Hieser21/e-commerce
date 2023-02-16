@@ -32,14 +32,14 @@ class Cart extends React.Component {
                                         return (<tr key={product[0]}>
                                             <td>{product[0]} <Button variant="danger" size="sm"
                                                 className="float-right" onClick={() => this.props.cartHandler(product[0], product[1])} >Remove</Button></td>
-                                            <td>₹ {product[1]}</td>
+                                            <td>BDT {product[1]}</td>
                                         </tr>)
                                     })
                                 }
 
                                 <tr>
                                     <th>Total</th>
-                                    <td>₹ {total}</td>
+                                    <td>BDT {total}</td>
                                 </tr>
 
                             </tbody>

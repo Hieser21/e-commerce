@@ -19,7 +19,7 @@ class Product extends React.Component {
                         {this.props.description}
                     </Card.Text>
                     <Card.Text>
-                        ₹ {this.props.price}
+                        BDT {this.props.price}
                         <Button className="float-right" variant={this.props.color}
                             onClick={() => this.props.cartHandler(this.props.productname, this.props.price)} >
                             {this.props.buttonText}  </Button>
